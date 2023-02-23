@@ -15,10 +15,10 @@ public class App {
         User user2 = new User("Luyda", "Sidorova", 25);
         User user3 = new User("Luydmila", "Grigorjeva", 26);
 
-        userService.add(user1);
-        userService.add(user2);
+        userService.create(user1);
+        userService.create(user2);
         userService.update(2,user3);
-        userService.add(user3);
+        userService.create(user3);
         userService.delete(3);
         System.out.println(userService.getAllUsers());
 
